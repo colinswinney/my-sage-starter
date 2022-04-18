@@ -1,0 +1,41 @@
+{
+	"extends": ["@roots/sage/stylelint-config"],
+	"plugins": ["stylelint-scss"],
+	"customSyntax": "postcss-scss",
+	"rules": {
+		"no-descending-specificity": null,
+		"value-keyword-case": null,
+		"font-family-name-quotes": "always-unless-keyword",
+		"string-quotes": "double",
+		"function-no-unknown": null,
+		"declaration-block-no-redundant-longhand-properties": null,
+		"at-rule-no-unknown": [
+			true,
+			{
+				"ignoreAtRules": [
+					"apply",
+					"at-root",
+					"content",
+					"debug",
+					"each",
+					"else",
+					"error",
+					"extend",
+					"for",
+					"function",
+					"if",
+					"include",
+					"mixin",
+					"responsive",
+					"return",
+					"screen",
+					"tailwind",
+					"use",
+					"variants",
+					"warn",
+					"while"
+				]
+			}
+		]
+	}
+}
